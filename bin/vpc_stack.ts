@@ -6,7 +6,7 @@ import { VpcStack } from '../lib/vpc_stack-stack';
 const app = new cdk.App();
 new VpcStack(app, 'VpcStack', {
   env: {
-    account: "ACCOUNT_ID",
-    region: "REGION"
+    account: "585434595970",
+    region: "us-east-1"
   }
 });

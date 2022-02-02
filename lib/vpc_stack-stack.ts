@@ -10,7 +10,6 @@ export class VpcStack extends cdk.Stack {
     const vpc = new ec2.Vpc(this, "ControlTowerVpc", {
       cidr: "10.0.0.0/16",
       maxAzs: 3,
-      natGateways: 1,
       subnetConfiguration: [
         {
           cidrMask: 24,
