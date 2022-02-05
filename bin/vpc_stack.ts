@@ -5,8 +5,8 @@ import { VpcStack } from "../lib/vpc_stack-stack";
 
 const app = new cdk.App();
 new VpcStack(app, "VpcStack", {
-  // env: {
-  //   account: process.env.CDK_DEFAULT_ACCOUNT,
-  //   region: process.env.CDK_DEFAULT_REGION,
-  // },
+  env: {
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION,
+  },
 });
